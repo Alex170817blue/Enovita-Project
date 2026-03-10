@@ -276,10 +276,10 @@
   margin-top: -.25rem;
 }
 
-// ── RESPONSIVE ──
 @include respond(md) {
   .page { grid-template-columns: 1fr; }
   .panel-left { padding: 4rem 2rem 3rem; min-height: auto; }
   .panel-right { padding: 3rem 2rem 4rem; }
   .form-row { grid-template-columns: 1fr; }
+
 }
