@@ -71,7 +71,6 @@
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════════ SEZIONE 2 -->
 <section class="menu-section">
   <h2 class="section-title">Degustazioni</h2>
   <div class="carousel-wrapper">
@@ -111,7 +110,6 @@
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════════ SEZIONE 3 -->
 <section class="menu-section">
   <h2 class="section-title">I Vini</h2>
   <div class="carousel-wrapper">
@@ -149,7 +147,6 @@
   </div>
 </section>
 
-<!-- ── OVERLAY ── -->
 <div class="overlay" id="overlay" role="dialog" aria-modal="true">
   <div class="overlay-card">
     <button class="overlay-close" id="overlayClose" aria-label="Chiudi">✕</button>
@@ -159,18 +156,15 @@
   </div>
 </div>
 
-<!-- ── FOOTER ── */-->
 <footer class="footer">
 <footer class="footer">
 
         <div class="footer__container">
 
-        <!-- Logo + descrizione -->
             <div class="footer__brand">
                 <img src="./img footer/logo_Eno.png" alt="Enovita logo">
             </div>
 
-        <!-- Contatti -->
             <div class="footer__contacts">
                 <h4>Contatti</h4>
                 <ul>
@@ -180,7 +174,6 @@
                 </ul>
             </div>
 
-        <!-- Social -->
             <div class="footer__social">
                 <h4>Seguici</h4>
                 <div class="social__icons">
@@ -201,7 +194,6 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ── CAROSELLI ──
   document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
     const track    = wrapper.querySelector('.carousel-track');
     const prevBtn  = wrapper.querySelector('.prev-btn');
@@ -223,7 +215,6 @@ document.addEventListener('DOMContentLoaded', () => {
     update();
   });
 
-  // ── OVERLAY ──
   const overlay     = document.getElementById('overlay');
   const overlayName = document.getElementById('overlayName');
   const overlayDesc = document.getElementById('overlayDesc');
@@ -306,4 +297,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 </script>
+
 </body>
