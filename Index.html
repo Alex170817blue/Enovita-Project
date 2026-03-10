@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">   
+    <head> 
+        <meta charset="UTF-8">
+        <meta name= "description" content="Sito Enovita">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enovita</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <style>   .hero__content { visibility: visible !important; }
+        </style>
+    </head>
+
+    <body>
+        
+            <button class="menu-fab" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="./menu.html">Menu Completo</a></li>
+                    <li><a href="./form.html">Prenotazione</a></li>
+                </ul>
+            </nav>
+        
+
+        <main>
+
+            <section class="hero">
+                <div class="hero__image">
+                    <img src="./img homepage/img_homepage.png" alt="tappo di bottiglia di vino"
+                    loading="lazy" width="800" height="1000">
+                </div> 
+
+                <div class="hero__content">
+                    <h1>EnoVita</h1>
+                    <h2>L'esperienza del vino a Milano</h2>
+                    <p>Per una semplice degustazione, un aperivino in compagnia o una 
+                        bottiglia per occasioni speciali. Enovita è 
+                        lesperienza enogastronomica accessibile e giovane di Milano. Venite a trovarci in Via Marghera, 16 
+                    </p>
+                </div>
+            </section>
+
+            <section class="wine">
+                <div class="wine__fill">
+                    <div class="wine__liquid">
+                        <svg class="wine__wave" viewBox="0 0 1400 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="
+                            M0,30
+                            C58,10 116,50 175,30
+                            C233,10 291,50 350,30
+                            C408,10 466,50 525,30
+                            C583,10 641,50 700,30
+                            C758,10 816,50 875,30
+                            C933,10 991,50 1050,30
+                            C1108,10 1166,50 1225,30
+                            C1283,10 1341,50 1400,30
+                            L1400,60 L0,60 Z
+                            " fill="#49110B"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <ul class="wine__list">
+                    <li class="wine-card">
+                        <img src="./img homepage/vino1.png" alt="Colomé Estate Malbec">
+                        <div class="wine-card__info">
+                            <h2>Colomé Estate Malbec</h2>
+                            <p>rosso dagli aromi fruttati, note floreali e un pizzico di spezie. 
+                                Perfetto con salumi e formaggi stagionati</p>
+                        </div>
+                    </li>
+
+                    <li class="wine-card">
+                        <img src="./img homepage/vino2.png" alt="Cabarmet Sauvignon">
+                        <div class="wine-card__info">
+                            <h2>Cabarmet Sauvignon</h2>
+                            <p>il classico sapore di frutti neri, sottobasco e tabacco
+                                con una nota acerba di cedro e l'abbraccio dolce della vaniglia.
+                                Perfetto per ogni tipo di aperivino
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="wine-card">
+                        <img src="./img homepage/vino3.png" alt="Masi Brolo Campofiorini Oro">
+                        <div class="wine-card__info">
+                           <h2>Masi Brolo Campofiorin Oro</h2>
+                            <p> un vino maturo e vellutato, adatto a chi ama
+                                le noti dolci di vaniglia e cacao. Le uve Corvina
+                                gli donano un profilo vellutato che si sposa
+                                con ogni tipo di pasto.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="wine-card">
+                        <img src="./img homepage/vino4.png" alt="Sauvignon di Anaia">
+                        <div class="wine-card__info">
+                            <h2>Cabarmet Sauvignon di Anaia</h2>
+                            <p>Una variazione del classico rosso fermo, che si distingue
+                                per la nota pepata e il volume corposo che rimane
+                                a lungo in bocca, accompagnando ogni boccone.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer class="footer">
+
+        <div class="footer__container">
+
+        <!-- Logo + descrizione -->
+            <div class="footer__brand">
+                <img src="./img footer/logo_Eno.png" alt="Enovita logo">
+            </div>
+
+        <!-- Contatti -->
+            <div class="footer__contacts">
+                <h4>Contatti</h4>
+                <ul>
+                    <li>Via Marghera, 16 Milano (MI)</li>
+                    <li><a href="tel:+393290756763">+39 329 075 6763</a></li>
+                    <li><a href="mailto:info@enovita.it">info@enovita.it</a></li>
+                </ul>
+            </div>
+
+        <!-- Social -->
+            <div class="footer__social">
+                <h4>Seguici</h4>
+                <div class="social__icons">
+                    <a href="#"><img src="./img footer/Insta_icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="./img footer/Facebook_icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="./img footer/twitter_icon.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2026 Enovita - Tutti i diritti riservati</p>
+        </div>
+
+        </footer>
+            <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+            const heroRef = document.querySelector(".hero");
+            const liquid  = document.querySelector(".wine__liquid");
+            const fab     = document.querySelector('.menu-fab');
+            const nav     = document.querySelector('.menu');
+
+            console.log('JS caricato', liquid, heroRef); // ← aggiungi qui
+
+
+            // Onda vino
+            window.addEventListener("scroll", () => {
+                const rect = heroRef.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const isMobile = window.innerWidth <= 768;
+
+                let clamped;
+                if (isMobile) {
+                    const progress = -rect.top / 1000;
+                    clamped = Math.max(0, Math.min(1, progress));
+                } else {
+                    const start = windowHeight * 0.5;
+                    const end = -rect.height;
+                    const progress = (start - rect.top) / (start - end);
+                    clamped = Math.max(0, Math.min(1, progress));
+                }
+
+                if (isMobile) {
+                    const minPx = 80;
+                    const maxPx = 300;
+                    const liqPx = minPx + (clamped * (maxPx - minPx));
+                    liquid.style.height = Math.min(liqPx, maxPx) + "px";
+                } else {
+                    liquid.style.height = Math.min(Math.max(clamped * 300, 20), 300) + "%";
+                }
+
+                liquid.style.zIndex = "300";
+                            
+            });
+
+            
+        
+            fab.addEventListener('click', (e) => {
+                if (!isDragging) {
+                    e.stopPropagation();
+                    const isOpen = nav.classList.toggle('menu--open');
+                    fab.classList.toggle('is-open', isOpen);
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!nav.contains(e.target) && !fab.contains(e.target)) {
+                    nav.classList.remove('menu--open');
+                    fab.classList.remove('is-open');
+                }
+            });
+
+            let isDragging = false;
+            let startX, startY, startLeft, startTop;
+
+            fab.addEventListener('mousedown', (e) => {
+                isDragging = false;
+                startX = e.clientX;
+                startY = e.clientY;
+                const rect = fab.getBoundingClientRect();
+                startLeft = rect.left;
+                startTop = rect.top;
+
+                const onMouseMove = (e) => {
+                    const dx = e.clientX - startX;
+                    const dy = e.clientY - startY;
+
+                    if (Math.abs(dx) > 4 || Math.abs(dy) > 4) {
+                        isDragging = true;
+                    }
+
+                    if (isDragging) {
+                        fab.style.left = startLeft + dx + 'px';
+                        fab.style.top  = startTop  + dy + 'px';
+                        fab.style.right = 'auto';
+                    }
+                };
+
+                const onMouseUp = () => {
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                    setTimeout(() => { isDragging = false; }, 10);
+                };
+
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+            });
+
+        });
+        </script>
+    </body>
+</html>

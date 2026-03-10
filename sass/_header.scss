@@ -1,0 +1,62 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--beige-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: var(--z-header);
+  overflow: visible;
+
+  &__brand {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+  }
+
+  &__menu {
+    background: var(--wine-red);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--beige-bg);
+      margin: 5px 0;
+    }
+  }
+}
+
+.home-btn {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--beige-bg);
+  border: 1.5px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,.1);
+  text-decoration: none;
+  @include smooth(transform);
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,.15);
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--black);
+  }
+}

@@ -1,0 +1,66 @@
+.wine {
+  position: relative;
+  background: var(--wine-red);
+  min-height: 100vh; 
+  overflow: visible;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+
+.wine__fill {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wine__liquid {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  background: var(--wine-red); 
+}
+
+.wine__wave {
+  position: absolute;
+  bottom: 100%;      
+  width: 220%;       
+  height: 200px;
+  animation: wave-move var(--wave-speed) linear infinite;
+  z-index: 1;
+}
+
+@keyframes wave-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-45.45%); } 
+}
+
+.wine__list {
+  position: relative;
+  z-index: 2;
+}
+
+@include respond(md) {
+
+  .wine__wave{
+    z-index: -1;
+    height: 30px;
+  }
+
+  .wine__liquid{
+    z-index: -1;
+    min-height: 0;
+    top: 0;
+  }
+
+  .wine{
+    position: relative;
+  }
+
+
+}

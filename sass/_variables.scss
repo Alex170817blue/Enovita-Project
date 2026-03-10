@@ -1,0 +1,59 @@
+:root{
+
+    /* COLORI */
+    --wine-red:#49110B;
+    --beige-bg:#E7E5DB;
+    --green-dark:#56483B;
+    --black:#191A1E;
+    --white: #FDFCF8;
+    --beige-dark: #D4D2C8;
+    
+    /*TIPOGRAFIA*/
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Arimo', sans-serif;
+
+    --font-size-base:32px;
+    --font-size-h1:120px;
+    --font-size-h2:48px;
+
+    /* SPACING */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+   /* ANIMAZIONE */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-fluid: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --duration-fast: 0.2s;
+  --duration-medium: 0.4s;
+  --duration-slow: 0.8s;
+
+  /*ANIMAZIONE ONDA VINO*/
+ 
+    --wave-height:30px;
+    --wave-speed:6s;
+    --liquid-shift:10px;
+
+
+  /* Z-INDEX  */
+  --z-base: 1;
+  --z-header: 10;
+  --z-menu: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+
+}
+
+$breakpoints:(
+    sm:480px,
+    md:768px,
+    lg:1024px,
+    xl: 1280px,
+);
+
+$wave-amplitude: 20px;
+$wave-speed: 1.2s;
+$bottle-offset-hover: 40px;

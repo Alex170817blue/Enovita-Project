@@ -1,0 +1,22 @@
+// Prima variabili e mixins
+@import 'variables';
+@import 'mixins';
+
+// Poi componenti / sezioni
+@import 'header';
+@import 'hero';
+@import 'menu-burger';
+@import 'wine-card';
+@import 'wine__list';
+@import 'wine';
+@import 'footer';
+@import 'social';
+@import 'menu-page';
+@import 'prenotazione';
+
+body {
+  background-color: var(--beige-bg);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}

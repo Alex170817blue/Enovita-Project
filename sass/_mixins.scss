@@ -1,0 +1,13 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin smooth($prop: all) {
+    transition: $prop var(--duration-medium) var(--ease-standard);
+}
+
+@mixin respond($break){
+    @media (max-width:map-get($breakpoints, $break)) { @content; }
+}
