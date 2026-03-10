@@ -1,8 +1,6 @@
-// Prima variabili e mixins
 @import 'variables';
 @import 'mixins';
 
-// Poi componenti / sezioni
 @import 'header';
 @import 'hero';
 @import 'menu-burger';
@@ -20,3 +18,4 @@ body {
   margin: 0;
   padding: 0;
 }
+
