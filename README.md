@@ -4,6 +4,14 @@ Sito web per **Enovita**, un enobar giovane e accessibile nel cuore di Milano. P
 
 ---
 
+## Alcuni Screenshot
+---
+![Homepage](screenshot/homepage.png)
+---
+![Form](screenshot/form.png)
+---
+![menuResponsive](screenshot/menuResponsive.png)
+---
 
 ## Funzionalità principali
 
